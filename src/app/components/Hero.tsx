@@ -8,8 +8,6 @@ interface HeroProps {
   title?: string;
   subtitle?: string;
   backgroundImage?: string;
-  
- 
 }
 
 export default function Hero({ 
@@ -21,13 +19,13 @@ export default function Hero({
 }: HeroProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = backgroundImage ? [backgroundImage] : [
-    '/images/hero_slideshow/simba-safari-camp-uganda-0294.webp',
-    '/images/hero_slideshow/Image-may-contain-sky-nature-and-outdoor.jpg',
-    '/images/hero_slideshow/May-be-an-image-of-big-cat-and-nature-5.jpg',
-    '/images/hero_slideshow/Beach-Lake-Kivu-Rwanda.jpg',
-    '/images/hero_slideshow/buffaloes-kidepo-1600w.jpg',
-    '/images/hero_slideshow/DSC_4384.jpg',
-    '/images/hero_slideshow/forestlake-1600w.jpg',
+    '/public/simba-safari-camp-uganda-0294.webp',
+    '/public/Image-may-contain-sky-nature-and-outdoor.jpg',
+    '/public/May-be-an-image-of-big-cat-and-nature-5.jpg',
+    '/images/Beach-Lake-Kivu-Rwanda.jpg',
+    '/images/buffaloes-kidepo-1600w.jpg',
+    '/images/DSC_4384.jpg',
+    '/images/forestlake-1600w.jpg',
   ];
 
   useEffect(() => {
@@ -37,7 +35,7 @@ export default function Hero({
 
     return () => clearInterval(interval);
   }, [slides.length]);
-
+ 
   return (
     <section className="relative h-screen w-full border-0" >
       {/* Background Slideshow */}
