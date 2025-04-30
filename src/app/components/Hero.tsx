@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
+ 
  
 
 interface HeroProps {
@@ -43,19 +43,12 @@ export default function Hero({
         {slides.map((slide, index) => (
           <div
             key={slide}
-            className={`relative inset-0 transition-opacity duration-1000 border-0 ${
+            className={`relative inset-0 transition-opacity duration-1000 object-cover border-0 rounded-lg${
               index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
             style={{ backgroundImage: `url(${slide})` }}
-          >
-            <Image
-              src={slide}
-              alt="African Safari"
-              fill
-              className="object-cover border-0 rounded-lg"
-              
-            />
-          </div>
+          />
+          
         ))}
         <div className="absolute inset-0 bg-black/30 border-0" />
       </div>
