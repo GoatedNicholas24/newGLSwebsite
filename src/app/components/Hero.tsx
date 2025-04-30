@@ -46,6 +46,7 @@ export default function Hero({
             className={`relative inset-0 transition-opacity duration-1000 border-0 ${
               index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
+            style={{ backgroundImage: `url(${slide})` }}
           >
             <Image
               src={slide}
