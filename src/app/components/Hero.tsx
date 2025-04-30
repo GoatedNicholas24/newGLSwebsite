@@ -22,7 +22,7 @@ export default function Hero({
     './simba-safari-camp-uganda-0294.webp',
     '/Image-may-contain-sky-nature-and-outdoor.jpg',
     '/May-be-an-image-of-big-cat-and-nature-5.jpg',
-    ' /Beach-Lake-Kivu-Rwanda.jpg',
+    '/Beach-Lake-Kivu-Rwanda.jpg',
     '/buffaloes-kidepo-1600w.jpg',
     '/DSC_4384.jpg',
     '/forestlake-1600w.jpg',
