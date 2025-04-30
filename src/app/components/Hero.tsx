@@ -19,7 +19,7 @@ export default function Hero({
 }: HeroProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = backgroundImage ? [backgroundImage] : [
-    './simba-safari-camp-uganda-0294.webp',
+    '/simba-safari-camp-uganda-0294.webp',
     '/Image-may-contain-sky-nature-and-outdoor.jpg',
     '/May-be-an-image-of-big-cat-and-nature-5.jpg',
     '/Beach-Lake-Kivu-Rwanda.jpg',
@@ -50,9 +50,9 @@ export default function Hero({
             <Image
               src={slide}
               alt="African Safari"
-              fill
+               
               className="object-cover border-0 rounded-lg"
-              priority={index === 0}
+              
             />
           </div>
         ))}
