@@ -19,13 +19,13 @@ export default function Hero({
 }: HeroProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = backgroundImage ? [backgroundImage] : [
-    '/public/simba-safari-camp-uganda-0294.webp',
-    '/public/Image-may-contain-sky-nature-and-outdoor.jpg',
-    '/public/May-be-an-image-of-big-cat-and-nature-5.jpg',
-    '/images/Beach-Lake-Kivu-Rwanda.jpg',
-    '/images/buffaloes-kidepo-1600w.jpg',
-    '/images/DSC_4384.jpg',
-    '/images/forestlake-1600w.jpg',
+    './simba-safari-camp-uganda-0294.webp',
+    '/Image-may-contain-sky-nature-and-outdoor.jpg',
+    '/May-be-an-image-of-big-cat-and-nature-5.jpg',
+    ' /Beach-Lake-Kivu-Rwanda.jpg',
+    '/buffaloes-kidepo-1600w.jpg',
+    '/DSC_4384.jpg',
+    '/forestlake-1600w.jpg',
   ];
 
   useEffect(() => {
