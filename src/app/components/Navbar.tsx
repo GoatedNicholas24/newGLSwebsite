@@ -42,41 +42,41 @@ export default function Navbar({ openAkili }: NavbarProps) {
    
 
   const safaris: SafariItem[] = [
-    { name: '7 Day Uganda Discovery Safari', href: '/safaris/uganda-discovery' },
-    { name: '15 Day Uganda Classic Safari', href: '/safaris/uganda-classic' },
-    { name: '4 Day Rwanda Gorilla Safari', href: '/safaris/rwanda-gorilla' },
-    { name: '5 Day Volcanoes and Lakes of Rwanda', href: '/safaris/rwanda-volcanoes' },
-    { name: '11 Day Rwanda Discovery Safari', href: '/safaris/rwanda-discovery' },
+    { name: '7 Day Uganda Discovery Safari', href: '#' },
+    { name: '15 Day Uganda Classic Safari', href: '#' },
+    { name: '4 Day Rwanda Gorilla Safari', href: '#' },
+    { name: '5 Day Volcanoes and Lakes of Rwanda', href: '#' },
+    { name: '11 Day Rwanda Discovery Safari', href: '#' },
   ];
 
   const collections: Collection[] = [
     {
       title: 'Boutique  ',
       items: [
-        { name: 'Elephant Plains Lodge', href: '/collections/elephant-plains' },
-        { name: 'Primate Lodge Kibale', href: '/collections/primate-lodge' },
-        { name: 'Mwamba Lodge Tarangire', href: '/collections/mwamba-lodge' },
-        { name: 'Pibidi Lodge', href: '/collections/pibidi-lodge' },
+        { name: 'Elephant Plains Lodge', href: '#' },
+        { name: 'Primate Lodge Kibale', href: '#' },
+        { name: 'Mwamba Lodge Tarangire', href: '#' },
+        { name: 'Pibidi Lodge', href: '#' },
       ]
     },
     {
       title: 'Adventure  ',
       items: [
-        { name: 'Simba Safari Camp', href: '/collections/simba-camp' },
-        { name: 'Budongo Forest Activities', href: '/collections/budongo-forest' },
+        { name: 'Simba Safari Camp', href: '#' },
+        { name: 'Budongo Forest Activities', href: '#' },
       ]
     }
   ];
 
   const navigation: NavigationItem[] = [
-    { name: 'Home', href: '/' },
+    { name: 'Home', href: '#' },
     { name: 'Safaris', href: '#', dropdown: safaris },
     { name: 'Collections', href: '#', dropdown: collections },
-    { name: 'Community', href: '/community' },
-    { name: 'About', href: '/about' },
-    { name: 'Our Team', href: '/team' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Community', href: '#' },
+    { name: 'About', href: '#' },
+    { name: 'Our Team', href: '#' },
+    { name: 'Blog', href: '#' },
+    { name: 'Contact', href: '#' },
   ];
 
   const isSafariDropdown = (dropdown: SafariItem[] | Collection[]): dropdown is SafariItem[] => {
@@ -88,9 +88,9 @@ export default function Navbar({ openAkili }: NavbarProps) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-0 ">
         <div className="flex items-center justify-between h-16 border-0">
           <div className="flex-shrink-0 border-0">
-            <Link href="/" className="block border-0">
+            <Link href="#" className="block border-0">
               <Image
-                src="/images/gls-m_logo.svg"
+                src="/gls-m_logo.svg"
                 alt="Great Lakes Safari Logo"
                 width={240}
                 height={80}
