@@ -94,7 +94,7 @@ export default function Navbar({ openAkili }: NavbarProps) {
                 alt="Great Lakes Safari Logo"
                 width={240}
                 height={80}
-                className="brightness-0"
+                className="brightness-80"
                 priority
               />
             </Link>
@@ -111,7 +111,7 @@ export default function Navbar({ openAkili }: NavbarProps) {
                       onMouseEnter={() => setActiveDropdown(item.name)}
                       onMouseLeave={() => setActiveDropdown(null)}
                     >
-                      <button className=" flex items-center text-gray-900 hover:text-primary-600 transition-colors text-lg border-0" style={{ color: '#2B5D34'  }}>
+                      <button className=" flex items-center text-gray-900 hover:text-primary-600 transition-colors text-lg border-0" style={{ color: '#FFFFFF'  }}>
                         <span className="text-lg border-0" style={{ fontSize: '1.0rem' }}>{item.name}</span>
                         
                         {activeDropdown === item.name ? (
@@ -161,7 +161,7 @@ export default function Navbar({ openAkili }: NavbarProps) {
                     <Link
                       href={item.href}
                       className="text-gray-900 hover:text-primary-600 transition-colors   text-lg border-0  "
-                      style={{ color: '#2B5D34',  fontSize: '1.0rem' }}
+                      style={{ color: '#FFFFFF',  fontSize: '1.0rem' }}
                     >
                       {item.name}
               </Link>
@@ -262,14 +262,14 @@ export default function Navbar({ openAkili }: NavbarProps) {
               )}
             </div>
           ))}
-          <div className="border-0 bg-green-800">
+          <div className="border-0 ">
           <button
             
             onClick={openAkili}
             className="block px-3 py-2 text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 border-0 rounded-md bg-green-800"
             style={{ backgroundColor: '#cf5f1f' }}
           >
-            Enquire
+           Ask Akili-AI
           </button>
           </div>
         </div>
