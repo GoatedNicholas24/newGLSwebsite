@@ -50,7 +50,7 @@ export default function Hero({
             <Image
               src={slide}
               alt="African Safari"
-               
+              fill
               className="object-cover border-0 rounded-lg"
               
             />
