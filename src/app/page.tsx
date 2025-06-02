@@ -1,10 +1,11 @@
- 'use client';
+'use client';
 import React from 'react';
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import { X } from 'lucide-react';
 import { useAkili } from './context/AkiliContext';
 import { motion, AnimatePresence } from 'framer-motion';
+import SafariPackagesSection from "./components/package_cards";
 export default function Home() {
   const { isOpen, messages, input, open, close, setInput, setMessages } = useAkili();
 
@@ -141,6 +142,8 @@ export default function Home() {
       </AnimatePresence>
       <div className="relative border-0"> 
       <Hero/>
+      <SafariPackagesSection />
+
         </div>
        
     </main>
