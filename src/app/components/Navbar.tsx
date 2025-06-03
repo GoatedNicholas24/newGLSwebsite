@@ -84,7 +84,7 @@ export default function Navbar({ openAkili }: NavbarProps) {
   };
 
   return (
-    <nav className="fixed top-4 left-0 right-0 z-50 bg-white/300 backdrop-blur-4xl shadow-md mx-8 border-0 rounded-md" style={{backdropFilter: 'blur(100px)',background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%)'}}>
+    <nav className="fixed top-4 left-0 right-0 z-50 bg-white/300 backdrop-blur-4xl shadow-md mx-8 border-0 rounded-md" style={{backdropFilter: 'blur(100px)'}}>
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 border-0 ">
         <div className="flex items-center justify-between h-16 border-0">
           <div className="flex-shrink-0 border-0">
@@ -171,10 +171,10 @@ export default function Navbar({ openAkili }: NavbarProps) {
               <button
                  
                 onClick={openAkili}
-                className="btn-primary ml-4 text-lg border-0 bg-green-800   w-19 h-8 align-center rounded-lg"
+                className="btn-primary ml-4 text-lg border-0  text-white  w-19 h-8 align-center rounded-lg"
                 style={{ backgroundColor: '#cf5f1f' }}
               >
-               <span className="align-center text-lg border-0 px-2" > Akili-AI </span>
+               <span className="align-center text-lg border-0 px-2 color-white" > Akili-AI </span>
                 </button>
             </div>
           </div>
@@ -264,9 +264,8 @@ export default function Navbar({ openAkili }: NavbarProps) {
           ))}
           <div className="border-0 ">
           <button
-            
             onClick={openAkili}
-            className="block px-3 py-2 text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 border-0 rounded-md bg-green-800"
+            className="block px-3 py-2 text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 border-0 rounded-md"
             style={{ backgroundColor: '#cf5f1f' }}
           >
            Ask Akili-AI
