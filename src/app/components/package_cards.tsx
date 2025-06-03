@@ -68,12 +68,7 @@ const SafariPackagesSection = () => (
     className="-mt-16 relative z-10 px-4 sm:px-8 max-w-7xl mx-auto"
     aria-labelledby="safari-packages-heading"
   >
-    <h2
-      id="safari-packages-heading"
-      className="text-3xl sm:text-4xl font-bold text-center mb-10 text-green-800"
-    >
-      Featured Safari Packages
-    </h2>
+    
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       {safariPackages.map((pkg) => (
         <SafariPackageCard key={pkg.title} {...pkg} />
