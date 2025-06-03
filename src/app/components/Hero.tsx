@@ -35,9 +35,19 @@ export default function Hero({
 
     return () => clearInterval(interval);
   }, [slides.length]);
- 
-  return (
-    <section className="relative h-screen w-full border-0" >
+
+  // Detect if the device is mobile
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  return isMobile ? (
+    <section className="relative h-100 w-full border-0" >
       {/* Background Slideshow */}
       <div className="absolute inset-0 border-0 rounded-lg ">
         {slides.map((slide, index) => (
@@ -46,8 +56,7 @@ export default function Hero({
             className={`absolute inset-0 transition-opacity duration-1000 border-0 ${
               index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
-            
-          >
+           >
             <Image
               src={slide}
               alt="African Safari"
@@ -65,13 +74,46 @@ export default function Hero({
         <div className="text-center max-w-6xl mx-auto border-0">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight border-0 ">
             {title}
-          </h1>
-          
+           
+          </h1> 
           <p className="mt-4 text-3xl md:text-4xl text-white/80 border-0">{subtitle}</p>
            
           
         </div>
       </div>
     </section>
+  ) : (
+    <section className="relative h-100 w-full border-0">
+      {/* Background Slideshow */}
+      <div className="absolute inset-0 border-0 rounded-lg ">
+        {slides.map((slide, index) => (
+          <div
+            key={slide}
+            className={`absolute inset-0 transition-opacity duration-1000 border-0 ${
+              index === currentSlide ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <Image
+              src={slide}
+              alt="African Safari"
+              fill
+              className="object-cover border-0 rounded-lg"
+            />
+          </div>
+        ))}
+        <div className="absolute inset-0 bg-black/30 border-0" />
+      </div>
+
+      {/* Content */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4 border-0">
+        <div className="text-center max-w-6xl mx-auto border-0">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight border-0 ">
+            {title}
+          </h1>
+
+          <p className="mt-4 text-3xl md:text-4xl text-white/80 border-0">{subtitle}</p>
+        </div>
+      </div>
+    </section>
   );
-} 
+}
