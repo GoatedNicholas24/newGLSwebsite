@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import React, { useState, useEffect } from "react";
 type SafariPackageCardProps = {
   image: string;
   title: string;
@@ -12,9 +12,12 @@ const SafariPackageCard = ({
   title,
   description,
   link,
-}: SafariPackageCardProps) => (
-  <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-2 duration-300 overflow-hidden flex flex-col">
-    <div className="relative h-48 w-full">
+}: SafariPackageCardProps) => {
+  
+  return (
+    
+    <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-2 duration-300 overflow-hidden flex flex-col">
+      <div className="relative h-48 w-full">
       <Image
         src={image}
         alt={title}
@@ -38,6 +41,7 @@ const SafariPackageCard = ({
     </div>
   </div>
 );
+}
 
 const safariPackages = [
   {
@@ -63,18 +67,41 @@ const safariPackages = [
   },
 ];
 
-const SafariPackagesSection = () => (
-  <section
-    className="-mt-16 relative z-10 px-4 sm:px-8 max-w-7xl mx-auto"
-    aria-labelledby="safari-packages-heading"
-  >
-    
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {safariPackages.map((pkg) => (
-        <SafariPackageCard key={pkg.title} {...pkg} />
-      ))}
-    </div>
-  </section>
-);
+const SafariPackagesSection = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return isMobile ? (
+    <section
+      className="-mt-16 relative z-10 px-4 sm:px-8 max-w-7xl mx-auto"
+      aria-labelledby="safari-packages-heading"
+    >
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {safariPackages.map((pkg) => (
+          <SafariPackageCard key={pkg.title} {...pkg} />
+        ))}
+      </div>
+    </section>
+  ) : (
+    <section
+      className="-mt-16 relative z-10 px-4 sm:px-8 max-w-7xl mx-auto"
+      aria-labelledby="safari-packages-heading"
+    >
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {safariPackages.map((pkg) => (
+          <SafariPackageCard key={pkg.title} {...pkg} />
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default SafariPackagesSection;

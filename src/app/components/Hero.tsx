@@ -72,11 +72,11 @@ export default function Hero({
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4 border-0">
         <div className="text-center max-w-6xl mx-auto border-0">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight border-0 ">
+          <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-6 leading-tight border-0 ">
             {title}
            
           </h1> 
-          <p className="mt-4 text-3xl md:text-4xl text-white/80 border-0">{subtitle}</p>
+          <p className="mt-4 text-2xl md:text-3xl text-white/80 border-0">{subtitle}</p>
            
           
         </div>
