@@ -6,6 +6,7 @@ import { X } from 'lucide-react';
 import { useAkili } from './context/AkiliContext';
 import { motion, AnimatePresence } from 'framer-motion';
 import SafariPackagesSection from "./components/package_cards";
+import GreetingLine from './components/GreetingLine';
 export default function Home() {
   const { isOpen, messages, input, open, close, setInput, setMessages } = useAkili();
 
@@ -143,6 +144,7 @@ export default function Home() {
       <div className="relative border-0"> 
       <Hero/>
       <SafariPackagesSection />
+      <GreetingLine/>
 
         </div>
        
