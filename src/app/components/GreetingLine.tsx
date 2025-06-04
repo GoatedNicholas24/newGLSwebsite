@@ -21,7 +21,10 @@ const GreetingLine = () => (
         Welcome! Experience the untamed beauty of East Africa with us! From the seductive landscapes covering some of the world’s most amazing mountains, thickest forests, deepest lakes and longest rivers, to the mesmerizing wildlife that lives in these serene environments. From the people that inhabit the spaces between to their rich cultures that leave you wanting more.
 
 We believe in enrichment. Enriching the lives of the people we work with, the communities we pass through, and the environment we live in. By choosing us, you gain a piece of this enrichment by being part of us, and through the experience we share with you.
-        Let’s explore beyond the wild—together.
+        
+      </p>
+      <p className="mt-4 text-green-600 font-bold">
+         Let’s explore beyond the wild together.
       </p>
     </div>
   </div>

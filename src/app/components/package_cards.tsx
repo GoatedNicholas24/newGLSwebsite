@@ -147,7 +147,7 @@ const SafariPackagesSection = () => {
         {/* Scrollable Cards */}
        <div
   ref={scrollRef}
-  className="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory py-2 w-full px-4 sm:px-6 md:px-12 gap-x-6"
+  className="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory py-2 w-full px-2 sm:px-3 md:px-6 gap-x-2"
   style={{ scrollBehavior: "smooth" }}
 >
   {safariPackages.map((pkg) => (

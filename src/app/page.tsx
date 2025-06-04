@@ -7,6 +7,11 @@ import { useAkili } from './context/AkiliContext';
 import { motion, AnimatePresence } from 'framer-motion';
 import SafariPackagesSection from "./components/package_cards";
 import GreetingLine from './components/GreetingLine';
+import GalleryPreview from './components/gallery_preview';
+import WhyChooseUs from './components/why_choose_us';
+import BoutiqueCollection from './components/boutique_collection';
+import NewsletterSection from './components/newsletter_section';
+import Footer from './components/footer';
 export default function Home() {
   const { isOpen, messages, input, open, close, setInput, setMessages } = useAkili();
 
@@ -145,7 +150,11 @@ export default function Home() {
       <Hero/>
       <SafariPackagesSection />
       <GreetingLine/>
-
+<GalleryPreview/>
+<WhyChooseUs/>
+<BoutiqueCollection/>
+<NewsletterSection/>
+<Footer/>
         </div>
        
     </main>
