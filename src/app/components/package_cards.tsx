@@ -108,7 +108,7 @@ const SafariPackagesSection = () => {
         }
       }
     };
-    autoScrollInterval.current = setInterval(scroll, 15000);
+    autoScrollInterval.current = setInterval(scroll, 20000);
     return () => {
       if (autoScrollInterval.current) clearInterval(autoScrollInterval.current);
     };
@@ -137,7 +137,7 @@ const SafariPackagesSection = () => {
         <button
           aria-label="Scroll left"
           onClick={handleScrollLeft}
-          className="flex absolute left-0 z-20 bg-green-100 hover:bg-green-200 rounded-full shadow p-2 transition-colors"
+          className="flex absolute left-0 z-20 bg-white/80 hover:bg-green-100 rounded-full shadow p-2 transition-colors"
           style={{ top: "50%", transform: "translateY(-50%)" }}
         >
           <svg width="28" height="28" fill="none" viewBox="0 0 24 24">
@@ -151,7 +151,7 @@ const SafariPackagesSection = () => {
           style={{ scrollBehavior: "smooth" }}
         >
           {safariPackages.map((pkg) => (
-            <div key={pkg.title} className="snap-start flex-shrink-0">
+            <div key={pkg.title} className="snap-start w-200">
               <SafariPackageCard {...pkg} />
             </div>
           ))}
@@ -160,7 +160,7 @@ const SafariPackagesSection = () => {
         <button
           aria-label="Scroll right"
           onClick={handleScrollRight}
-          className="flex absolute right-0 z-20 bg-green-100 hover:bg-green-200 rounded-full shadow p-2 transition-colors"
+          className="flex absolute right-0 z-20 bg-white/80 hover:bg-green-100 rounded-full shadow p-2 transition-colors"
           style={{ top: "50%", transform: "translateY(-50%)" }}
         >
           <svg width="28" height="28" fill="none" viewBox="0 0 24 24">
