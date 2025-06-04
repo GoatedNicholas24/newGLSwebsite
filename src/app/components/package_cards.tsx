@@ -70,7 +70,13 @@ const safariPackages = [
       "An epic 21-day exploration of Uganda’s national parks, wildlife, and culture. The ultimate way to experience the Pearl of Africa.",
     link: "#",
   },
-   
+  {
+    image: "/forestlake-1600w.jpg",
+    title: "Ultimate Uganda 20th Anniversary Safari 3",
+    description:
+      "An epic 21-day exploration of Uganda’s national parks, wildlife, and culture. The ultimate way to experience the Pearl of Africa.",
+    link: "#",
+  },
 ];
 
 const SCROLL_AMOUNT = 340; // px, adjust to card width + margin
@@ -139,17 +145,18 @@ const SafariPackagesSection = () => {
           </svg>
         </button>
         {/* Scrollable Cards */}
-        <div
-          ref={scrollRef}
-          className="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory py-2 w-full px-12"
-          style={{ scrollBehavior: "smooth" }}
-        >
-          {safariPackages.map((pkg) => (
-            <div key={pkg.title} className="snap-start w-200">
-              <SafariPackageCard {...pkg} />
-            </div>
-          ))}
-        </div>
+       <div
+  ref={scrollRef}
+  className="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory py-2 w-full px-4 sm:px-6 md:px-12 gap-x-6"
+  style={{ scrollBehavior: "smooth" }}
+>
+  {safariPackages.map((pkg) => (
+    <div key={pkg.title} className="snap-start flex-shrink-0 w-[300px]">
+      <SafariPackageCard {...pkg} />
+    </div>
+  ))}
+</div>
+
         {/* Right Arrow */}
         <button
           aria-label="Scroll right"
