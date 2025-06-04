@@ -151,7 +151,7 @@ const SafariPackagesSection = () => {
   style={{ scrollBehavior: "smooth" }}
 >
   {safariPackages.map((pkg) => (
-    <div key={pkg.title} className="snap-start flex-shrink-0 w-[300px]">
+    <div key={pkg.title} className="snap-start flex-shrink-0 w-90">
       <SafariPackageCard {...pkg} />
     </div>
   ))}
