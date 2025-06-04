@@ -84,7 +84,7 @@ export default function Navbar({ openAkili }: NavbarProps) {
   };
 
   return (
-    <nav className="fixed top-4 left-0 right-0 z-50 bg-white/300 backdrop-blur-4xl shadow-md mx-8 border-0 rounded-md" style={{backdropFilter: 'blur(100px)'}}>
+    <nav className="fixed top-4 left-0 right-0 z-50   backdrop-blur-4xl shadow-md mx-8 border-0 rounded-md" style={{backdropFilter: 'blur(100px)', backgroundColor: 'rgba(168, 168, 168, 0.69)'}}>
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 border-0 ">
         <div className="flex items-center justify-between h-16 border-0">
           <div className="flex-shrink-0 border-0">
