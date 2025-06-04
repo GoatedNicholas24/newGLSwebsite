@@ -70,13 +70,7 @@ const safariPackages = [
       "An epic 21-day exploration of Uganda’s national parks, wildlife, and culture. The ultimate way to experience the Pearl of Africa.",
     link: "#",
   },
-  {
-    image: "/forestlake-1600w.jpg",
-    title: "Ultimate Uganda 20th Anniversary Safari 3",
-    description:
-      "An epic 21-day exploration of Uganda’s national parks, wildlife, and culture. The ultimate way to experience the Pearl of Africa.",
-    link: "#",
-  },
+   
 ];
 
 const SCROLL_AMOUNT = 340; // px, adjust to card width + margin
