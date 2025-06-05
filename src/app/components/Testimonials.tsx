@@ -70,20 +70,13 @@ export default function Testimonials() {
           </p>
         </motion.div>
 
-        <div className="relative h-[400px]">
+        <div className="relative h-[430px]">
           <AnimatePresence mode="wait">
-            <motion.div
-              key={currentIndex}
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.5 }}
-              className="absolute inset-0"
-            >
+           
               <motion.div
                 initial={{ scale: 0.95, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 2 }}
                 className="bg-white rounded-xl shadow-lg p-8 h-full flex flex-col md:flex-row gap-8 border border-gray-100"
               >
                 <div className="md:w-1/3 flex flex-col items-center">
@@ -115,7 +108,7 @@ export default function Testimonials() {
                     &quot;{testimonials[currentIndex].quote}&quot;
                   </blockquote>
                 </div>
-              </motion.div>
+              
             </motion.div>
           </AnimatePresence>
         </div>
