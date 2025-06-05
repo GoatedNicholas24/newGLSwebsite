@@ -104,7 +104,7 @@ export default function Navbar({ openAkili }: NavbarProps) {
           <div className="hidden md:block border-0">
             <div className="ml-6 flex items-center space-x-6 border-0 ">
               {navigation.map((item) => (
-                <div key={item.name} className="relative border-0 ">
+                <div key={item.name} className="relative border-0 h-3 " >
                   {item.dropdown ? (
                     <div
                       className="group border-0"
@@ -121,7 +121,7 @@ export default function Navbar({ openAkili }: NavbarProps) {
                         )}
                       </button>
                       {activeDropdown === item.name && (
-  <div className={`absolute top-full left-0   bg-white py-4 mt-2 border-0 shadow-lg rounded-md`} style={{width: isSafariDropdown(item.dropdown) ? '300px' : '400px'}}>
+  <div className={`absolute top-full left-0   bg-white py-4 mt-2 border-0 shadow-lg rounded-md backdrop-blur-4xl`} style={{width: isSafariDropdown(item.dropdown) ? '300px' : '400px',backdropFilter: 'blur(100px)', backgroundColor: 'rgba(144, 142, 142, 0.69)'}}>
     {isSafariDropdown(item.dropdown) ? (
       item.dropdown.map((subItem) => (
         <Link

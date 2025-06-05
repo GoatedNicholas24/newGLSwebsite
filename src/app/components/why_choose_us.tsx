@@ -25,24 +25,26 @@ const features = [
 
 const WhyChooseUs = () => (
   <section className="py-16 bg-gray-50" id="why-choose-us">
-    <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 text-green-800">
-      Why Choose Us
+    <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 text-green-800" style={ {color: '#557553'}}>
+      Why Choose Us?
     </h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto">
       {features.map((f) => (
-        <div key={f.title} className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center">
-          <div className="relative w-28 h-28 mb-4">
-            <Image src={f.image} alt={f.title} fill className="object-cover rounded-xl" />
+        <div key={f.title} className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center" 
+        style={{backgroundColor:'#b49f63'}}
+         >
+          <div className="relative w-full h-56 mb-4">
+            <Image src={f.image} alt={f.title} fill className="object-cover rounded-xl w-full "/>
           </div>
-          <h3 className="text-xl font-semibold mb-2">{f.title}</h3>
-          <p className="text-gray-600">{f.desc}</p>
+          <h3 className="text-xl  mb-2 " style={{color:'#fcfbfa', fontSize: '1.7rem'}}>{f.title}</h3>
+          <p className="text-white" style={{color:'#fcfbfa'}} >{f.desc}</p>
         </div>
       ))}
     </div>
     <div className="flex justify-center mt-10">
       <a
         href="/about"
-        className="bg-green-700 text-white px-8 py-3 rounded-lg font-medium hover:bg-green-800 transition-colors shadow"
+        className="bg-green-700 text-white px-8 py-3 rounded-lg font-medium hover:bg-green-800 transition-colors shadow" style={ {backgroundColor: '#cf5f1f'}}
       >
         About Us
       </a>

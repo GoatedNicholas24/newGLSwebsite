@@ -14,7 +14,7 @@ const GreetingLine = () => (
     </div>
     {/* Translucent greeting box */}
     <div className="relative z-10 bg-white/80 rounded-2xl shadow-lg px-8 py-6 max-w-2xl mx-auto text-center backdrop-blur-sm">
-      <h1 className="text-2xl sm:text-3xl font-bold text-green-900 mb-2">
+      <h1 className="text-2xl sm:text-3xl font-bold   mb-2" style={ {color: '#557553'}}>
         Karibu!
       </h1>
       <p className="text-gray-700 text-base sm:text-lg">
@@ -23,8 +23,8 @@ const GreetingLine = () => (
 We believe in enrichment. Enriching the lives of the people we work with, the communities we pass through, and the environment we live in. By choosing us, you gain a piece of this enrichment by being part of us, and through the experience we share with you.
         
       </p>
-      <p className="mt-4 text-green-600 font-bold">
-         Let’s explore beyond the wild together.
+      <p className="mt-4  font-bold text-xl" style={ {color: '#557553'}} >
+         Let’s explore beyond the wild together!
       </p>
     </div>
   </div>

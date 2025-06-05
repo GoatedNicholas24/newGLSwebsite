@@ -26,13 +26,13 @@ const SafariPackageCard = ({
         />
       </div>
       <div className="p-6 flex flex-col flex-1">
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
+        <h3 className="text-xl font-semibold mb-2 " style={{color: '#557553'}}>{title}</h3>
         <p className="text-gray-600 mb-4 flex-1">{description}</p>
         <a
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-auto bg-green-700 text-white px-5 py-2 rounded-lg font-medium hover:bg-green-800 transition-colors"
+          className="inline-block mt-auto   text-white px-5 py-2 rounded-lg font-medium hover:bg-green-800 transition-colors" style={{backgroundColor: '#557553'}}
         >
           Learn More
         </a>

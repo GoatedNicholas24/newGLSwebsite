@@ -12,10 +12,10 @@ const NewsletterSection = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-green-50 to-green-100">
-      <div className="max-w-xl mx-auto bg-white/80 rounded-2xl shadow-lg px-8 py-10 text-center backdrop-blur-sm">
-        <h2 className="text-2xl sm:text-3xl font-bold text-green-900 mb-2">
-          Sign up for our Journey Beyond Newsletter
+    <section className="py-16 " style={{backgroundColor:'#eae1ce'}}>
+      <div className="max-w-xl mx-auto bg-white/80 rounded-2xl shadow-lg px-8 py-10 text-center backdrop-blur-sm" >
+        <h2 className="text-2xl sm:text-3xl font-bold   mb-2" style={ {color: '#557553'}}>
+          Sign up for our Journey Beyond-Newsletter
         </h2>
         <p className="text-gray-700 mb-6">
           The Great Lakes Safaris Journey Beyond newsletter, sent irregularly, roughly once per month, provides updates on our activities and the ‘Great Lakes’ region, including conservation efforts, community initiatives, and new travel experiences.
@@ -28,6 +28,7 @@ const NewsletterSection = () => {
             className="rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-400"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            style={ {color: '#557553'}}
           />
           <label className="flex items-center gap-2 justify-center">
             <input
@@ -35,10 +36,12 @@ const NewsletterSection = () => {
               checked={isPro}
               onChange={() => setIsPro((v) => !v)}
               className="accent-green-700"
+              style={ {color: '#557553'}}
             />
             <span className="text-gray-700">I am a travel professional</span>
           </label>
           <button
+          style={ {backgroundColor: '#557553'}}
             type="submit"
             className="bg-green-700 text-white px-8 py-3 rounded-lg font-medium hover:bg-green-800 transition-colors shadow"
           >

@@ -20,9 +20,9 @@ const GalleryPreview = () => (
       <div className="md:absolute md:top-8 md:right-8 mt-6 md:mt-0">
         <a
           href="/gallery"
-          className="bg-green-700 text-white px-5 py-2 rounded-lg font-medium hover:bg-green-800 transition-colors shadow"
+          className="bg-green-700 text-white px-5 py-2 rounded-lg font-medium hover:bg-green-800 transition-colors shadow" style={{ backgroundColor: '#cf5f1f' }}
         >
-          Go to Gallery
+          Visit Our Gallery
         </a>
       </div>
     </div>

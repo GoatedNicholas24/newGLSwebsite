@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const Footer = () => (
-  <footer className="bg-green-900 text-white pt-12 pb-6">
+  <footer className="  text-white pt-12 pb-6" style={ {backgroundColor: '#557553'}}>
     <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row md:justify-between gap-8">
       <div className="flex flex-col items-start gap-4">
         <Image src="/gls-logo-white.webp" alt="Great Lakes Safaris" width={180} height={60} />
@@ -30,7 +30,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <div className="border-t border-green-800 mt-8 pt-4 text-center text-sm text-green-200">
+    <div className="border-t border-green-800 mt-8 pt-4 text-center text-sm text-green-100">
       © 2025 Copyright – Great Lakes Safaris &nbsp;|&nbsp;
       <link href="/terms" className="underline hover:text-white"/> 
       <link href="/privacy" className="underline hover:text-white"/>
