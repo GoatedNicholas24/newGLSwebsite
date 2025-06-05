@@ -11,8 +11,8 @@ interface HeroProps {
 }
 
 export default function Hero({ 
-  title = "Discover Africa's Untamed Beauty",
-  subtitle = "Journey Beyond the wild.",
+  title = "Journey Beyond the wild",
+  subtitle = "Discover Africa's Untamed Beauty!",
   backgroundImage,
   
   

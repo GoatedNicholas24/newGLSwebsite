@@ -84,7 +84,7 @@ export default function Navbar({ openAkili }: NavbarProps) {
   };
 
   return (
-    <nav className="fixed top-4 left-0 right-0 z-50   backdrop-blur-4xl shadow-md mx-8 border-0 rounded-md" style={{backdropFilter: 'blur(100px)', backgroundColor: 'rgba(168, 168, 168, 0.69)'}}>
+    <nav className="fixed top-4 left-0 right-0 z-50 backdrop-blur-4xl shadow-md mx-8 border-0 rounded-md h-18" style={{backdropFilter: 'blur(100px)', backgroundColor: 'rgba(168, 168, 168, 0.69)'}}>
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 border-0 ">
         <div className="flex items-center justify-between h-16 border-0">
           <div className="flex-shrink-0 border-0">
@@ -121,7 +121,7 @@ export default function Navbar({ openAkili }: NavbarProps) {
                         )}
                       </button>
                       {activeDropdown === item.name && (
-  <div className={`absolute top-full left-0   bg-white py-4 mt-2 border-0 shadow-lg rounded-md backdrop-blur-4xl`} style={{width: isSafariDropdown(item.dropdown) ? '300px' : '400px',backdropFilter: 'blur(100px)', backgroundColor: 'rgba(144, 142, 142, 0.69)'}}>
+  <div className={`absolute top-full left-0   bg-white py-4 mt-2 border-0 shadow-lg rounded-md backdrop-blur-6xl`} style={{width: isSafariDropdown(item.dropdown) ? '300px' : '400px',backdropFilter: 'blur(150px)', backgroundColor: 'rgba(248, 248, 248, 0.69)'}}>
     {isSafariDropdown(item.dropdown) ? (
       item.dropdown.map((subItem) => (
         <Link
