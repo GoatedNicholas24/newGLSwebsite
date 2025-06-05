@@ -1,8 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
- 
+import Image from 'next/image'; 
 
 interface HeroProps {
   title?: string;
@@ -113,3 +112,4 @@ export default function Hero({
     </section>
   );
 }
+

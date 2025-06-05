@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import Hero from "./components/Hero";
+import Testimonials from './components/Testimonials';
 import Navbar from "./components/Navbar";
 import { X } from 'lucide-react';
 import { useAkili } from './context/AkiliContext';
@@ -10,7 +11,7 @@ import GreetingLine from './components/GreetingLine';
 import GalleryPreview from './components/gallery_preview';
 import WhyChooseUs from './components/why_choose_us';
 import BoutiqueCollection from './components/boutique_collection';
-import NewsletterSection from './components/newsletter_section';
+import NewsletterSection from './components/newsletter_section'; 
 import Footer from './components/footer';
 export default function Home() {
   const { isOpen, messages, input, open, close, setInput, setMessages } = useAkili();
@@ -152,7 +153,8 @@ export default function Home() {
       <GreetingLine/>
 <GalleryPreview/>
 <WhyChooseUs/>
-<BoutiqueCollection/>
+<BoutiqueCollection/> 
+<Testimonials/>
 <NewsletterSection/>
 <Footer/>
         </div>

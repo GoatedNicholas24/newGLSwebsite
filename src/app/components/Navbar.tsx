@@ -5,9 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronUp } from 'lucide-react';
 import { ChevronDown } from 'lucide-react';
- 
-
-
+import { Menu, Home, Compass, Users, Info, BookOpen, Phone } from 'lucide-react';
 
 interface SafariItem {
   name: string;
