@@ -10,10 +10,10 @@ const galleryImages = [
 const GalleryPreview = () => (
   <section className="py-16 bg-white relative">
     <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center">
-      <div className="flex-1 grid grid-cols-3 grid-rows-1 gap-2">
+      <div className="flex-1 grid grid-cols-3 grid-rows-1 gap-2 overflow-x-auto scrollbar-hide " style={{ scrollBehavior: "smooth" }}>
         {galleryImages.slice(0, 6).map((img, i) => (
-          <div key={img} className="relative w-full aspect-square rounded-lg overflow-hidden">
-            <Image src={img} alt={`Gallery ${i + 1}`} fill className="object-cover" />
+          <div key={img} className="relative w-80 h-80 aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
+            <Image src={img} alt={`Gallery ${i + 1}`} fill  className="object-cover w-80 h-80" />
           </div>
         ))}
       </div>
