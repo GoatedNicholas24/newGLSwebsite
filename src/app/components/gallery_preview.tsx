@@ -9,7 +9,9 @@ const galleryImages = [
 
 const GalleryPreview = () => (
   <section className="py-16 bg-white relative">
+    <h1 className="text-4xl font-bold mb-4 text-center " style={{color: '#557553'}}>Pictorial</h1>
     <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center">
+      
       <div className="flex-1 grid grid-cols-3 grid-rows-1 gap-2 overflow-x-auto scrollbar-hide " style={{ scrollBehavior: "smooth" }}>
         {galleryImages.slice(0, 6).map((img, i) => (
           <div key={img} className="relative w-80 h-80 aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
