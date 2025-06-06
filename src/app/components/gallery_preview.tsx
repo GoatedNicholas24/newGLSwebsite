@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const galleryImages = [
   "/forestlake-1600w.jpg",
-  "/forestlake-1600w copy.jpg",
-  "/forestlake-1600w copy 2.jpg",
+  "/gallery_img2.jpg",
+  "/wcu4.webp",
   
 ];
 

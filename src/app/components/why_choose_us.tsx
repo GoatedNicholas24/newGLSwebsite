@@ -4,22 +4,22 @@ const features = [
   {
     title: "Authentic Experiences",
     desc: "Discover East Africa through the eyes of local experts. Our safaris immerse you in genuine cultural encounters and breathtaking natural landscapes.",
-    image: "/forestlake-1600w.jpg", // Replace with your image
+    image: "/gallery_img1.jpg", // Replace with your image
   },
   {
     title: "Expertise & Passion",
     desc: "With over two decades of experience, our passionate team ensures every detail of your safari is thoughtfully planned for an unforgettable adventure.",
-    image: "/forestlake-1600w.jpg", // Replace with your image
+    image: "/bc3.webp", // Replace with your image
   },
   {
     title: "Sustainability at Heart",
     desc: "We are committed to responsible tourism, conservation efforts, and community upliftment, ensuring your journey leaves a positive impact.",
-    image: "/forestlake-1600w.jpg", // Replace with your image
+    image: "/gallery_img3.jpg", // Replace with your image
   },
   {
     title: "Tailor-Made Journeys",
     desc: "No two travelers are the same. We design personalized itineraries that cater to your interests, whether it’s wildlife safaris, gorilla trekking, or cultural tours.",
-    image: "/forestlake-1600w.jpg", // Replace with your image
+    image: "/wcu2.webp", // Replace with your image
   },
 ];
 

@@ -112,7 +112,7 @@ export default function Navbar({ openAkili }: NavbarProps) {
                       onMouseLeave={() => setActiveDropdown(null)}
                     >
                       <button className=" flex items-center text-gray-900 hover:text-primary-600 transition-colors text-lg border-0" style={{ color: '#FFFFFF'  }}>
-                        <span className="text-lg border-0" style={{ fontSize: '1.0rem' }}>{item.name}</span>
+                        <span className="text-lg border-0" style={{ fontSize: '1.2rem' }}>{item.name}</span>
                         
                         {activeDropdown === item.name ? (
                           <ChevronUp className="ml-1 h-4 w-4 border-0" />
@@ -121,13 +121,14 @@ export default function Navbar({ openAkili }: NavbarProps) {
                         )}
                       </button>
                       {activeDropdown === item.name && (
-  <div className={`absolute top-full left-0   bg-white py-4 mt-2 border-0 shadow-lg rounded-md backdrop-blur-6xl`} style={{width: isSafariDropdown(item.dropdown) ? '300px' : '400px',backdropFilter: 'blur(150px)', backgroundColor: 'rgba(248, 248, 248, 0.69)'}}>
+  <div className={`absolute top-full left-0   bg-white py-4 mt-2 border-0 shadow-lg rounded-md backdrop-blur-6xl`} style={{width: isSafariDropdown(item.dropdown) ? '300px' : '400px',backdropFilter: 'blur(150px)', backgroundColor: 'rgba(255, 255, 255, 0.9)'}}>
     {isSafariDropdown(item.dropdown) ? (
       item.dropdown.map((subItem) => (
         <Link
           key={`${item.name}-${subItem.name}`}
-          href={subItem.href}
-          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600 border-0" style={{color: '#2B5D34'}}
+          href={subItem.href} 
+          style={{color: '#2B5D34', fontSize: '1.0rem'}}
+          className="block px-4 py-2 text-sm text-gray-700 hover:border-2  hover:text-primary-600 hover:bg-gray-200 rounded-md transition border-0"
         >
           {subItem.name}
               </Link>
@@ -136,15 +137,17 @@ export default function Navbar({ openAkili }: NavbarProps) {
       <div className="grid grid-cols-2 gap-6 px-4 border-0">
         {item.dropdown.map((collection, index) => (
           <div key={`${item.name}-${collection.title}-${index}`} className="border-0">
-            <h3 className="px-2 py-1 text-sm  text-gray-500 uppercase tracking-wider border-0 font-bold" style={{color: '#cf5f1f' }}>
+            <h3 style={{ fontSize: '1.2rem',color: '#cf5f1f'  }}
+            className="px-2 py-1 text-sm  text-gray-500 uppercase tracking-wider border-0 font-bold" >
               {collection.title}
             </h3>
             {collection.items.map((subItem) => (
               <Link
+              
                 key={`${item.name}-${collection.title}-${subItem.name}`}
                 href={subItem.href}
-                className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600 rounded-md transition border-0"
-                style={{color: '#2B5D34'}}
+                className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:border-2 hover:text-primary-600 rounded-md transition border-0"
+                style={{color: '#2B5D34',  fontSize: '1.1rem'}}
               >
                 {subItem.name}
               </Link>
@@ -161,7 +164,7 @@ export default function Navbar({ openAkili }: NavbarProps) {
                     <Link
                       href={item.href}
                       className="text-gray-900 hover:text-primary-600 transition-colors   text-lg border-0  "
-                      style={{ color: '#FFFFFF',  fontSize: '1.0rem' }}
+                      style={{ color: '#FFFFFF',  fontSize: '1.1rem' }}
                     >
                       {item.name}
               </Link>

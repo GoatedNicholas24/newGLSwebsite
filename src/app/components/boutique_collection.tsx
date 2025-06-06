@@ -7,20 +7,20 @@ const lodges = [
     name: "Elephant Plains Lodge",
     park: "Queen Elizabeth National Park",
     country: "UGANDA",
-    image: "/forestlake-1600w.jpg",
+    image: "/gallery_img4.jpg",
   },
    
   {
     name: "Primate Lodge Kibale",
     park: "Kibale National Park",
     country: "UGANDA",
-    image: "/forestlake-1600w.jpg",
+    image: "/bc2.webp",
   },
   {
     name: "Mwamba Lodge Tarangire",
     park: "Tarangire National Park",
     country: "TANZANIA",
-    image: "/forestlake-1600w.jpg",
+    image: "/bc1.jpg",
   },
 ];
 

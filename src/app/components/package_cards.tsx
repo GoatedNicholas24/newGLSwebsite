@@ -26,8 +26,8 @@ const SafariPackageCard = ({
         />
       </div>
       <div className="p-6 flex flex-col flex-1">
-        <h3 className="text-xl font-semibold mb-2 " style={{color: '#557553'}}>{title}</h3>
-        <p className="text-gray-600 mb-4 flex-1">{description}</p>
+        <h3 className="text-xl font-semibold mb-2 " style={{color: '#557553', fontSize:'1.1rem'}}>{title}</h3>
+        <p className="text-gray-600 mb-4 flex-1" style={{fontSize:'1.0rem'}}>{description}</p>
         <a
           href={link}
           target="_blank"
@@ -43,14 +43,14 @@ const SafariPackageCard = ({
 
 const safariPackages = [
   {
-    image: "/forestlake-1600w.jpg", // Replace with your actual image paths
+    image: "/Image-may-contain-sky-nature-and-outdoor.jpg", // Replace with your actual image paths
     title: "Uganda Classic Safari",
     description:
       "A 15-day journey through Uganda’s top parks: wildlife, primates, and culture. Includes game drives, gorilla & chimp tracking, and scenic lakes.",
     link: "#",
   },
   {
-    image: "/forestlake-1600w.jpg",
+    image: "/buffaloes-kidepo-1600w.jpg",
     title: "Uganda Discovery Safari",
     description:
       "A 7-day adventure ideal for primate lovers and wildlife seekers. Chimpanzee & gorilla tracking, game drives, and beautiful landscapes.",
@@ -64,7 +64,7 @@ const safariPackages = [
     link: "#",
   },
   {
-    image: "/forestlake-1600w.jpg",
+    image: "/DSC_4384.jpg",
     title: "Ultimate Uganda 20th Anniversary Safari 2",
     description:
       "An epic 21-day exploration of Uganda’s national parks, wildlife, and culture. The ultimate way to experience the Pearl of Africa.",
@@ -148,7 +148,8 @@ const SafariPackagesSection = () => {
        <div
   ref={scrollRef}
   className="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory py-2 w-full px-2 sm:px-3 md:px-6 gap-x-2"
-  style={{ scrollBehavior: "smooth" }}
+ 
+ style={{ scrollBehavior: "smooth", scrollbarWidth: "none" }}
 >
   {safariPackages.map((pkg) => (
     <div key={pkg.title} className="snap-start flex-shrink-0 w-90">

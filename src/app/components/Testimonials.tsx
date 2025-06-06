@@ -76,7 +76,7 @@ export default function Testimonials() {
               <motion.div
                 initial={{ scale: 0.95, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 2 }}
+                transition={{ duration: 30 }}
                 className="bg-white rounded-xl shadow-lg p-8 h-full flex flex-col md:flex-row gap-8 border border-gray-100"
               >
                 <div className="md:w-1/3 flex flex-col items-center">
